@@ -1,5 +1,6 @@
 package study.spring.start.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import study.spring.start.domain.Member;
 import study.spring.start.repository.MemberRepository;
 import study.spring.start.repository.MemoryMemberRepository;
@@ -9,7 +10,12 @@ import java.util.Optional;
 
 public class MemberService {
 
-    private final MemberRepository memberRepository = new MemoryMemberRepository();
+    private final MemberRepository memberRepository;
+
+    @Autowired
+    public MemberService(MemberRepository memberRepository) {
+        this.memberRepository = memberRepository;
+    }
 
     /**
      * 회원가입
