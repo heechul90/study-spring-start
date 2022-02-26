@@ -1,13 +1,14 @@
 package study.spring.start.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
 import study.spring.start.domain.Member;
 import study.spring.start.repository.MemberRepository;
-import study.spring.start.repository.MemoryMemberRepository;
 
 import java.util.List;
 import java.util.Optional;
 
+@Transactional
 public class MemberService {
 
     private final MemberRepository memberRepository;
