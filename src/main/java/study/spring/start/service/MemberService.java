@@ -1,5 +1,6 @@
 package study.spring.start.service;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import study.spring.start.domain.Member;
@@ -13,7 +14,6 @@ public class MemberService {
 
     private final MemberRepository memberRepository;
 
-    @Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
