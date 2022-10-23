@@ -46,4 +46,6 @@
     - AOP가 필요한 상황
     - AOP 적용
 
-[다음으로](https://github.com/heechul90/study-spring-basic)
+[[다음으로]](https://github.com/heechul90/study-spring-basic)
+
+[[복습하기/적용하기]](https://github.com/heechul90/project-hellcoding)
